@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+}
+
+body{
+    background: royalblue;
+}
+
+ul{
+    list-style: none;
+    background: #333;
+    text-align: center;
+}
+li{
+    display: inline-block;
+    position: relative;
+}
+
+a{
+    display: block;
+    padding: 20px 25px;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+.dropdown li{
+    display: block;
+    background: #333;
+    margin: 2px 0;
+}
+
+.dropdown{
+    width: auto;
+    background:transparent;
+    position: absolute;
+    z-index: 999;
+    display: none;
+}
+
+ul li a:hover{
+    background: #222;
+    transition: .5s ease
+}
+
+ul li:hover ul.dropdown{
+    display: block;
+}
